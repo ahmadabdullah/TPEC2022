@@ -1,0 +1,3449 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+%\usepackage[caption=true,font=footnotesize]{subfig}
+%\renewcommand{\thetable}{\arabic{table}}
+%\renewcommand{\figurename}{Fig.}
+\newref{Figure}{name = \RSFigtxt}
+%\newref{tab}{name = \RSTabtxt}
+%\newref{eq}{name = \RSEqtxt}
+%\newcommand{\squeezeup}{\vspace{-2.5mm}}
+\end_preamble
+\use_default_options false
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks false
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style \use_bibtopic false
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A Time-Domain Short Circuit Study for a VSC Based Battery Energy Storage
+ System
+\end_layout
+
+\begin_layout Author
+Ahmad
+\begin_inset space ~
+\end_inset
+
+Abdullah,
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Flex IEEE membership
+status collapsed
+
+\begin_layout Plain Layout
+Senior Member,
+\begin_inset space ~
+\end_inset
+
+IEEE
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space ~
+\end_inset
+
+Muhammad
+\begin_inset space ~
+\end_inset
+
+Humayun,
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Flex IEEE membership
+status collapsed
+
+\begin_layout Plain Layout
+Member,
+\begin_inset space ~
+\end_inset
+
+IEEE
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space ~
+\end_inset
+
+David
+\begin_inset space ~
+\end_inset
+
+Mueller,
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Flex IEEE membership
+status collapsed
+
+\begin_layout Plain Layout
+Member,
+\begin_inset space ~
+\end_inset
+
+IEEE
+\end_layout
+
+\end_inset
+
+, Carl
+\begin_inset space ~
+\end_inset
+
+Moeller
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Ahmad Abdullah (email: 
+\begin_inset CommandInset href
+LatexCommand href
+target "ahmad.abdullah@cu.edu.eg"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+) is with Faculty of Engineering at Cairo University, Cairo, Egypt and Mortenson
+ Construction, San Antonio, TX 78259 USA.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Muhammad Humayun (e-mail: 
+\begin_inset CommandInset href
+LatexCommand href
+target "mhumayun@enernex.com"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+) and David Mueller (e-mail: 
+\begin_inset CommandInset href
+LatexCommand href
+target "dmueller@enernex.com"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+) are with EnerNex, Knoxville, TN 37932 USA.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Carl Moeller (email: 
+\begin_inset CommandInset href
+LatexCommand href
+target "carl.moeller@mortenson.com"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+) are with Mortenson Construction, San Antonio, TX, 78259 USA.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip*
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+978-1-6654-7902-8/22/$31.00 ©2022 IEEE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+A phasor domain short circuit study for a battery energy storage system
+ was performed per ANSI C37.010-2016.
+ Results showed high short circuit asymmetrical currents.
+ Two time-domain models were also built― simplified and detailed ―to compare
+ the results with the phasor domain study.
+ The results of both the simplified and the detailed time-domain models
+ agree to a large degree with the simplified model on the conservative side.
+ However, the results of both models differ dramatically from the phasor
+ domain model.
+ The results in this paper show the need to update the ANSI C37.010-2016
+ to account for battery energy storage and inverter based-generation in
+ general.
+\end_layout
+
+\begin_layout Keywords
+Electromagnetic transients, EMTDC, Energy storage, Short-circuit currents,
+ Storage battery, Voltage source inverters.
+\end_layout
+
+\begin_layout Section*
+NOMENCLATURE 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BESS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Battery Energy Storage System
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MPT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Main Power Transformer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medium Voltage
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power Conversion Unit
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PMT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Padmount Transformer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PWM 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pulse-Width Modulation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+POI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Point of Interconnection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RMS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Root Mean Square
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VSC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Voltage Source Converter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Introduction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+IEEEPARstart{
+\end_layout
+
+\end_inset
+
+A
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+ny
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ battery energy storage system (BESS) project goes through what is known
+ as conceptual design.
+ This conceptual design incorporates realistic assumptions about the grid.
+ The most critical assumptions are the short circuit contribution from the
+ interconnecting utility and the transfer power capability of the interconnectin
+g transmission lines.
+ This conceptual design becomes an integral part of the financial model
+ of the project.
+ This design eventually becomes complete by filling in the details once
+ a project developer decides to move on with the project if a financial
+ institution chooses to finance a project.
+ The conceptual design involves the determination of the ratings of the
+ major components of the project, such as the substation switchgear, the
+ main power transformer (MPT) size, and the ratings of the battery container
+ inverter technology, which is better known as in the industry as power
+ conversion unit (PCS).
+ The PCS converts the DC battery energy into AC energy and vice versa for
+ charging and discharging operations.
+ 
+\end_layout
+
+\begin_layout Standard
+In this paper, we perform short circuit studies for a large BESS project
+ consisting of 68 voltage source converter (VSC) PCS with a total capacity
+ of 204 MW connected to a 230 kV substation.
+ Each PCS contains an inverter, switchgear, and a 0.63kV/34.5 kV 3.45 MVA padmount
+ transformer (PMT), all in one assembly.
+ The studies are performed using three methods: (1) ASPEN OneLiner phasor-domain
+ simulation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASPEN"
+literal "false"
+
+\end_inset
+
+, (2) PSCAD®/EMTDC® 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PSCAD"
+literal "false"
+
+\end_inset
+
+ simplified time-domain simulations, and (3) PSCAD detailed time-domain
+ simulations.
+ The comparison of the studies shows that phasor-domain short-circuit levels
+ are conservative as compared to time-domain results.
+ Also, a sensitivity analysis is carried out for detailed time-domain simulation
+s to show the dependencies of the short-circuit level on the system operating
+ and modeling conditions, e.g., BESS connection status, MPT tap, utility source
+ state.
+\end_layout
+
+\begin_layout Standard
+The phasor domain short circuit study was done in ASPEN based on the IEEE
+ ANSI C37.010-1979 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C37-010-1979"
+literal "false"
+
+\end_inset
+
+ and IEEE Violet Book 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IEEEViolet"
+literal "true"
+
+\end_inset
+
+.
+ The IEEE ANSI C37.010-1979 is what has been historically programmed in all
+ phasor domain commercial short circuit packages to calculate breaker duty
+ ratings.
+ The IEEE ANSI C37.010-1979 was later updated to IEEE ANSI C37.010-2016 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C37-010-2016"
+literal "false"
+
+\end_inset
+
+, and the updated version is essentially the same.
+ IEEE Violet Book was later updated to IEEE 3002.3-2018 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IEEE3002-2-2018"
+literal "false"
+
+\end_inset
+
+.
+ The most important aspect of the IEEE C37.010-2016 is the multiplication
+ factor for determining the asymmetrical current component in case the X/R
+ ratio is not 17.
+ Both IEEE standards go into depth to create sequence networks that would
+ produce worst case X/R ratios that tend to conservatively size the breaker.
+ 
+\end_layout
+
+\begin_layout Standard
+Several articles have discussed fault current contributions from inverter-based
+ generation; however, the literature is lacking in comparing asymmetrical
+ fault current contributions from BESS based on the phasor and time-domain
+ simulation.
+ The asymmetrical current peak of 1-5 per unit (p.u.) of inverter’s rated
+ peak current for up to a quarter of a cycle is documented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2019short,gonzalez2018fault"
+literal "false"
+
+\end_inset
+
+— 4-5 p.u.
+ for single-phase inverters and 2-3 p.u.
+ for three-phase inverters.
+ Since the asymmetrical fault characteristics of inverter-based generators
+ differ from conventional synchronous generators 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2018theoretical"
+literal "false"
+
+\end_inset
+
+, it is required to review and update the relevant standard for selecting
+ the circuit breaker capacities.
+ 
+\end_layout
+
+\begin_layout Standard
+The paper is organized as follows: 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:BESS-Description"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ provides details of the BESS project.
+ The phasor domain study is given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:PhasorDomainStudy"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+ The simplified and detailed time-domain studies are provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:SimplifedEMT"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:DetailedEMT"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+, respectively.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:COMPARISON-OF-PHASOR"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ discusses the comparison of phasor and time-domain simulations.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Conclusions"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ summarizes the findings.
+\end_layout
+
+\begin_layout Section
+BESS PROJECT DESCRIPTION
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:BESS-Description"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Power-conversion-unit"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ shows the PCS layout used in the BESS project under study, which is a voltage
+ source converter PCS capable of black-start.
+ The PCS consists of an inverter, switchgear, and a PMT, all in one assembly.
+ In this sense, a PCS is more than an inverter: it is the whole DC/AC conversion
+ system.
+ What makes this PCS unique is the existence of switchgear that serves a
+ specific function in the overall topology.
+ The overcurrent protection settings of this switchgear are not adjustable
+ due to this functionality.
+ The switchgear model used in this project is rated for 20 kA RMS current
+ interruption, while the closing and latching is 54.6 kA peak.
+ The DC side runs at a voltage between 900 V to 1300 V, and the AC output
+ voltage is 630 V.
+ The PMT is 0.63 kV/34.5 kV rated at 3.45 MVA with a vector group of Dy1.
+ The bushing is capable of withstanding 20 kA RMS symmetrical current for
+ two seconds and 52 kA peak current for ten cycles per the IEEE C37.20.3 standard
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C37_20_3"
+literal "false"
+
+\end_inset
+
+.
+ The PCS vendor rates the whole PCS assembly for 52 kA peak withstand for
+ ten cycles.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/PCS.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Power conversion unit (PCS) used in the battery energy storage energy system
+ (BESS) project under study.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Power-conversion-unit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The project consists of sixty-eight (68) PCSs.
+ Each PCS is connected to one battery enclosure.
+ The PCSs are arranged in strings, and all strings are connected in parallel.
+ Each string contains several PCSs in series.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Interconnection-of-the"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ outlines the interconnection of the BESS project under study (shown in
+ red).
+ The BESS project has a total capacity of 204 MW.
+ The MPT of this project is a three-winding transformer that is top rated
+ for 265 MVA.
+ The MPT impedance is 8.4% at the top rating (16R tap and 16L tap impedances
+ are 8.74% and 8.26%, respectively), and the vector group is YN1yn1d1.
+ The BESS interconnects to the transmission grid through two 230 kV transmission
+ lines that connect to a 500 kV level through a 500 kV/230 kV step-up substation.
+ The black buses at the end of the 230 kV tie lines (floating buses on the
+ right of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Interconnection-of-the"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+) are proposed for substations for future inverter-based generation and
+ storage.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Graphics/InterconnectionPic.tif
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interconnection of the understudy (red) BESS project.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Interconnection-of-the"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The original conceptual design assumed a short circuit current of 25 kA
+ at the 230 kV bus at the step-up substation.
+ The inverter short circuit was considered to be 1.1 p.u.
+ Using these assumptions, the short circuit at the low side of the MPT within
+ the BESS project is 24.7 kA.
+ The designer decided to use 40 kA low side breakers.
+ 
+\end_layout
+
+\begin_layout Standard
+The current utility short circuit level is 24.5 kA, the maximum build out
+ is 34.3 kA, while the emergency condition is 49.9 kA.
+ The PCS subtransient reactance is 0.96pu while the synchronous reactance
+ is 0.99 pu.
+ The first thing to notice about the current utility short circuit is that
+ it is very close to the assumed utility short circuit in the conceptual
+ design.
+ The second thing to notice is that the inverter steady-state short circuit
+ contribution is one p.u., which is lower than the assumption in the conceptual
+ design.
+ The third thing is that the PCS short circuit impedance has no resistive
+ component even though it contains the PMT resistance.
+ Upon contacting the PMT vendor, it was made clear that the PCS contribution
+ is on the 34.5 kV side and does not include any resistance for conservative
+ results.
+ However, what was not known in conceptual design stage is that the 230
+ kV bus at the step-up substation can have a short circuit of 49.9 kA.
+ The step-up substation has two large transformers, and the grid operator
+ would parallel them in case of specific emergency conditions.
+ Also, what was not known during conceptual design is that the grid short
+ circuit can go up by 10 kA in case all of the projects get built in the
+ area.
+\end_layout
+
+\begin_layout Section
+PHASOR DOMAIN STUDY 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:PhasorDomainStudy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This section describes the phasor domain modeling and short circuit study
+ results.
+ 
+\end_layout
+
+\begin_layout Standard
+A detailed phasor-domain short circuit study was performed using ASPEN utilizing
+ the grid emergency short circuit condition.
+ The results at the substation are given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Substation-Short-Circuit"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+ The BESS collection system is short; thus, the fault at the first PCS can
+ be considered the same as the fault at the low side bus.
+ One thing that stands out in these results is the abnormally high X/R ratio
+ at the low side bus.
+ Due to the high X/R ratios, the calculated peak currents are also high
+ and are given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Substation-Short-Circuit"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ and are calculated using the equations in IEEE Std 551-2006 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "STD55_20106"
+literal "false"
+
+\end_inset
+
+.
+ The standard contains different ways of calculating the peak currents,
+ but it did not significantly differ.
+ It should be noted that using the emergency grid short circuit is not making
+ a lot of difference at the low side three phase short circuit because of
+ the long tie lines and the impedance of the MPT.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Substation Short Circuit
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Substation-Short-Circuit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-Phase Short Circuit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peak Current
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X/R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+230 kV High Side Bus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.1 kA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+53.6 kA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34.5 kV High Side Bus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23.1 kA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+63.2 kA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Based on the results, the short circuit currents at the first PCS on the
+ string are higher than the PCS unit’s rated short circuit capability.
+ The theoretical maximum peak current is 
+\begin_inset Formula $2\times\sqrt{2}\times Fault~Current~RMS$
+\end_inset
+
+.
+ Based on that, the theoretical maximum peak is 65.3 kA.
+ The calculated peak current from the short circuit study is due to the
+ high X/R and the equations used in the standards.
+ Since the peak current is much higher than the capability, a safety concern
+ has arisen.
+ High peak currents can cause high forces, and the breaker may shatter.
+ Since the peak current at the low side in the fault study was close to
+ the maximum theoretical, a time-domain study was warranted to obtain more
+ accurate results.
+\end_layout
+
+\begin_layout Standard
+While the time-domain study in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:SimplifedEMT"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:DetailedEMT"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ were performed, the authors reached out to the PCS vendor to see if the
+ vendor can produce test data to verify the peak withstand of the switchgear
+ of the PCS.
+ The vendor performed more testing and showed that the PCS switchgear and
+ disconnect switch assembly can withstand 63.6 kA peak current.
+ 
+\end_layout
+
+\begin_layout Section
+SIMPLIFIED TIME-DOMAIN MODEL
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SimplifedEMT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This section describes the simplified time-domain modeling and short circuit
+ study results.
+ PSCAD, a general-purpose time-domain simulation tool for studying the transient
+ behavior of electrical networks, is used for the simulations.
+ 
+\end_layout
+
+\begin_layout Standard
+For this study, the phasor-domain short circuit study model of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:PhasorDomainStudy"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ was converted to a time-domain model.
+ All transmission lines and underground cables were converted to pi-equivalent
+ segments.
+ The grid was represented as an ideal voltage source behind an impedance.
+ The impedance was chosen to produce the emergency condition fault current
+ at the 230 kV point of interconnection (POI) bus.
+ The PCS was represented as an ideal voltage behind a 0.962 pu impedance
+ at the 34.5 kV level.
+ The purpose of the time-domain study is to:
+\end_layout
+
+\begin_layout Enumerate
+Quantify the effect of the cable and transmission line charging capacitance
+\end_layout
+
+\begin_layout Enumerate
+Obtain a more realistic estimate of the peak current
+\end_layout
+
+\begin_layout Enumerate
+Perform a sensitivity study regarding the MPT tap changer, transmission
+ line temperature, and generation level in the project 
+\end_layout
+
+\begin_layout Standard
+A worst-case analysis showed that the peak current is 57 kA and is shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Simplified-PSCAD-Study"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+ This is 10% less than the phasor domain short circuit study.
+ For this reason, it was decided to perform a detailed time-domain analysis
+ that considers the PCS inverter response and this is given in the next
+ section.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/simplifiedPscadstudy.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fault current using simplified PSCAD study.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simplified-PSCAD-Study"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DETAILED TIME-DOMAIN MODEL 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:DetailedEMT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This section describes the detailed PSCAD time-domain modeling, simulated
+ cases, and short circuit study results.
+ 
+\end_layout
+
+\begin_layout Subsection
+PCS Model Benchmarking
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:PCS-Model-Benchmarking"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The PCS vendor provided the PSCAD model, which can be parameterized to represent
+ a single PCS and an aggregated model of the whole BESS.
+ It should be noted that the vendor PSCAD model contains a transformer with
+ zero resistance as well.
+ First, the single PCS model short-circuit contributions are validated with
+ the laboratory-tested values by applying a three-phase-to-ground fault
+ on the medium voltage (MV) side.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Single-PCS-current"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Currents_Low-voltage-side-of_PCS"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Currents-at-theLVofPMT"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ show the simulated results―(1) currents at the MV side, (2) currents at
+ the low-voltage side, (3) pulse-width modulation (PWM) output voltage,
+ and (4) power frequency filtered PWM output voltage.
+ The figures display that a current spike of 1.87 p.u.
+ appears for a short duration because inverter control takes around 200
+ µs to decrease PWM average voltage.
+ These simulated results match well with the PCS laboratory tests as given
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Single-PCS-laboratory"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig5.png
+	scale 95
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Single PCS current contribution of detailed PSCAD model (all phases) at
+ the MV side for a 3-phase-to-ground fault on the MV side at 1 second.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Single-PCS-current"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig6.png
+	scale 58
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Currents using detailed PSCAD model at the low-voltage side (top), PWM output
+ voltage (middle), PWM output voltage filtered for power frequency (bottom).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Currents_Low-voltage-side-of_PCS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig7.png
+	scale 97
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Currents using detailed PSCAD model at the low-voltage side of the PMT (top),
+ PWM output voltage (middle), PWM output voltage filtered for power frequency
+ (bottom).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Currents-at-theLVofPMT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig8.png
+	scale 115
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Single PCS laboratory test current measurements at the MV side of the PMT
+ for a 3-phase-to-ground fault on the MV side.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Single-PCS-laboratory"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+PCS Reduced Order Model
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:PCS-Reduced-Order"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The vendor-provided PCS model has a limitation that only six to seven instances
+ can be executed using a typical computer.
+ Therefore, the PCS aggregation approach is adopted to perform simulation
+ for the BESS project―a single equivalent PCS model is used for multiple
+ instances by changing the parameters following the vendor instructions.
+\end_layout
+
+\begin_layout Standard
+The short circuit contributions of four and eight PCS instances and their
+ equivalent aggregates are validated by applying a three-phase-to-ground
+ fault at 1 s on the MV side of the PMT.
+ A one second is used to ensure that the models have reached steady state
+ before introducing the fault.
+ In the multiple instances case, a short (50 ft) 500 kcmil cable is also
+ considered between inverters to imitate the actual field installation.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Simulation-setup-for"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:SimulationOf9PCS"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Fault-contributions-from4pcs"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Fault-contributions-from8PCS"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ show the simulation setups and results.
+ The total fault contributions are approximately the same as their model
+ equivalents for both four and eight PCS instances.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation setup for 4 PCS instances vs.
+ aggregate model.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-setup-for"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/8PCS.png
+	scale 38
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation setup for 8 PCS instances vs.
+ aggregate model.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SimulationOf9PCS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig10.png
+	scale 67
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fault contributions from 4 PCS instances vs.
+ aggregate model.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fault-contributions-from4pcs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig12.png
+	scale 68
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fault contributions from 8 PCS instances vs.
+ aggregate model.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fault-contributions-from8PCS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+System Model
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:System-Model"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Snapshot-of-the"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ shows the PSCAD snapshot of the system model setup.
+ A 230 kV voltage source equivalent is used for the system upstream of POI.
+ The system model consists of two 230 kV transmission line sections, MPT,
+ and two 34.5 kV short MV cable sections, and 68 PCS’ equivalent aggregate
+ 233.24 MVA BESS.
+ The accuracy of the PSCAD simulation model was verified using steady-state
+ quantities, such as bus voltages and the collection cable charging MVAR.
+ 
+\begin_inset Float figure
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig13.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Snapshot of the detailed PSCAD model setup for the study.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Snapshot-of-the"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Study Cases
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Study-Cases"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Case-list-for"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ shows six case studies that are performed for a three-phase-to-ground fault
+ on the 34.5 kV BESS collector system.
+ Case 1 is the base case that considers all PCS of BESS, transmission capacitanc
+e, ultimate build-out utility bus 34.3 kA fault level, and neutral tap for
+ MPT.
+ The other cases are for sensitivity analysis to find the dependencies of
+ the short-circuit current on the system operating and modeling conditions.
+ The sequence of events for the simulation are:
+\end_layout
+
+\begin_layout Itemize
+t = 0-1 s: Simulation starts and steady-state operation
+\end_layout
+
+\begin_layout Itemize
+t = 1 s: Three-phase-to-ground fault on 34.5 kV BESS collector system 
+\end_layout
+
+\begin_layout Standard
+For this study, the inverter voltage and frequency protection and power
+ plant controller functions (e.g., voltage, reactive power, frequency, power
+ factor control modes) are disabled to ensure worst case results are obtained.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Case list for detailed time-domain simulations
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Case-list-for"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of PCS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transmission Capacitance
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utility Fault kA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+MPT Tap
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+34.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+N
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+34.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+N
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+34.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+N
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+49.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+N
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+34.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+16R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+34.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+16L
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Results
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Results"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This section furnishes short circuit contribution results for all cases
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Case-list-for"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Case 1
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Case-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Case-1-fault"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ shows the total fault current, contributions from the 68 inverters, and
+ contribution from the grid for a three-phase-to-ground fault at BESS collector
+ systems.
+ The following observations can be made from the figure:
+\end_layout
+
+\begin_layout Itemize
+Inverters slightly increase the asymmetrical fault current peak (first peak
+ after the fault at 1 s)―total 51.5 kA, utility contribution 50.6 kA, and
+ inverter contribution 9.1 kA.
+ 
+\end_layout
+
+\begin_layout Itemize
+The contributions of the inverters in symmetrical fault current peak (after
+ a few cycles from the fault) are higher― total 33.1 kA, utility contribution
+ 27.7 kA, and inverter contribution 5.5 kA.
+ The inverter contributions are equal to around one p.u.
+ of their ratings.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Graphics/fig14.png
+	scale 98
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Case 1 fault currents: Total current (top), inverter contributions (middle),
+ and utility grid contribution (bottom).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Case-1-fault"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sensitivity Analysis Results
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Sensitivity-Analysis-Results"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Asymmetric-peak-fault"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+ displays the asymmetrical peak fault current for all the cases.
+ The results indicate that:1) The effect of system capacitance is not significan
+t, 2) MPT tap position does not have a big effect on the results.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Asymmetric peak fault current
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Asymmetric-peak-fault"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="5cm">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Case Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Asymmetrical Peak kA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+68 PCS; Tie line capacitance; Utility fault level: 34.305 kA; MPT Tap: N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+51.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+No PCS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+51.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+No PCS; No transmission line capacitance
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+51.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Emergency higher fault level (49.9) at the source
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+53
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+MPT tap at 16R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+50.8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+MPT tap at 16L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+49.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+COMPARISON OF PHASOR AND TIME-DOMAIN RESULTS
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:COMPARISON-OF-PHASOR"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The phasor-domain analysis depicts the highest (63.2 kA) fault current, followed
+ by the simplified (57 kA) and detailed (53 kA) time-domain analyses values.
+\end_layout
+
+\begin_layout Standard
+The difference in asymmetrical current is solely due to the inverter contributio
+n which is not mentioned in the standards.
+ It is the authors' experience that the inverters do not contribute any
+ substantial asymmetrical current regardless of their technology.
+ This stems from the fact that the PWM control reacts fast to control the
+ current to protect the inverter components.
+ In this paper, it is clear from the simulations that the high X/R ratio
+ is causing a conservative asymmetrical current.
+ The C37.010-2016 calls for a 20% margin in switchgear sizing.
+ The results of this paper shows that IEEE calculations adds another 10%
+ margin.
+ This 30% margin is making it more expensive to design renewable energy
+ projects.
+ 
+\end_layout
+
+\begin_layout Standard
+In the end, a costly decision was made to redesign the project substation
+ to include current limiting reactors to limit the grid short circuit contributi
+on to limit the asymmetrical current.
+ The main reason for that decision was that the study performed in this
+ paper was out of step with the IEEE standards and the project's owner did
+ not want to take risks even if it were based on deep engineering analysis.
+ This shows the need to update the related IEEE standards to include inverter
+ short circuit behavior.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusions 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This paper has compared the fault current for a large 204 MW BESS project
+ calculated using three methods: (1) ASPEN phasor-domain simulation, (2)
+ PSCAD simplified time-domain simulations, and (3) PSCAD detailed time-domain
+ simulations.
+ The comparison indicated that phasor-domain short-circuit asymmetrical
+ peak levels are conservative as compared to time-domain results.
+ 
+\end_layout
+
+\begin_layout Standard
+Furthermore, sensitivity analysis results have shown that PCSs do not increase
+ the asymmetrical peak current significantly.
+ Moreover, the results exhibited that the inverter contributions to symmetrical
+ fault current are equal to around one p.u.
+ of their ratings.
+ Also, for the project under study, the operating conditions of the MPT
+ tap position decreased the asymmetric peak, and modeling of transmission
+ line capacitance did not change the peak current significantly.
+ 
+\end_layout
+
+\begin_layout Standard
+The results of this paper shows the need to update the IEEE standards to
+ include the right way of modeling inverter short circuit contribution.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "References"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

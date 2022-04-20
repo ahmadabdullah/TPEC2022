@@ -1,0 +1,133 @@
+% Encoding: UTF-8
+
+@Article{C37_20_3,
+  journal = {IEEE Std C37.20.3-2013 (Revision of IEEE Std C37.20.3-2001)},
+  title   = {{IEEE Standard for Metal-Enclosed Interrupter Switchgear (1 kV to 38 kV)}},
+  year    = {2014},
+  pages   = {1-70},
+  doi     = {10.1109/IEEESTD.2014.6730641},
+}
+
+@Article{STD55_20106,
+  journal = {{IEEE Std 551-2006 [The Violet Book]}},
+  title   = {{Recommended Practice for Calculating AC Short-Circuit Currents in Industrial and Commercial Power Systems}},
+  year    = {2006},
+  pages   = {1-308},
+  doi     = {10.1109/IEEESTD.2006.248693},
+}
+
+@InProceedings{turcotte2009fault,
+  author       = {Turcotte, Dave and Katiraei, Farid},
+  booktitle    = {2009 IEEE Electrical Power \& Energy Conference (EPEC)},
+  title        = {{Fault Contribution of Grid-Connected Inverters}},
+  year         = {2009},
+  organization = {IEEE},
+  pages        = {1--5},
+}
+
+@Tutorial{PWM,
+  author  = {Pekarek, Steven and Skvarenina, Timothy},
+  chapter = {{PWM Inverter}},
+  journal = {ACSL/Graphic Modeller Component Models for Electric Power Education},
+  url     = {https://www.ewh.ieee.org/soc/es/Nov1998/08/PWMINV.HTM},
+  year    = {1998},
+}
+
+@Article{7444090,
+  journal = {ANSI/ IEEE C37.5-1979},
+  title   = {{IEEE Guide for Calculation of Fault Currents for Application of AC High-Voltage Circuit Breakers Rated on a Total Current Basis}},
+  year    = {1979},
+  pages   = {1-24},
+  doi     = {10.1109/IEEESTD.1979.7444090},
+}
+
+@Online{PSCAD,
+  author = {{Manitoba HVDC Research Centre}},
+  title  = {{PSCAD/EMTDC: Electromagnetic Transients Program Including DC Systems}},
+  url    = {https://www.pscad.com/},
+  year   = {1994},
+}
+
+@Online{ASPEN,
+  author = {{Advanced Systems for Power Engineering, Inc}},
+  title  = {{ASPEN OneLiner}},
+  url    = {https://www.aspeninc.com/web/software/oneliner},
+  year   = {1998},
+}
+
+@Article{C37-010-2016,
+  journal = {IEEE Std C37.010-2016 (Revision of IEEE Std C37.010-1999)},
+  title   = {{IEEE Application Guide for AC High-Voltage Circuit Breakers > 1000 Vac Rated on a Symmetrical Current Basis}},
+  year    = {2017},
+  pages   = {1-123},
+  doi     = {10.1109/IEEESTD.2017.7906465},
+}
+
+@Article{C37-010-1979,
+  journal = {ANSI/IEEE C37.010-1979 (Includes Supplement ANSI/IEEE C37.0I0d-1984)},
+  title   = {{IEEE Application Guide for AC High-Voltage Circuit Breakers Rated on a Symmetrical Current Basis}},
+  year    = {1979},
+  pages   = {1-54},
+  doi     = {10.1109/IEEESTD.1979.82933},
+}
+
+@Article{IEEE3002-2-2018,
+  journal = {IEEE Std 3002.3-2018},
+  title   = {{IEEE Recommended Practice for Conducting Short-Circuit Studies and Analysis of Industrial and Commercial Power Systems}},
+  year    = {2019},
+  pages   = {1-184},
+  doi     = {10.1109/IEEESTD.2019.8672198},
+}
+
+@Article{IEEEViolet,
+  journal = {IEEE Std 551-2006 [The Violet Book]},
+  title   = {{Recommended Practice for Calculating AC Short-Circuit Currents in Industrial and Commercial Power Systems}},
+  year    = {2006},
+  pages   = {1-308},
+  doi     = {10.1109/IEEESTD.2006.248693},
+}
+
+@InProceedings{9326226,
+  author    = {Quispe H, Juan Carlos and Villarroel-Gutierrez, Hector and Orduna, Eduardo},
+  booktitle = {2020 IEEE PES Transmission Distribution Conference and Exhibition - Latin America (T D LA)},
+  title     = {{Analyzing Short-Circuit Current Behavior Caused by Inverter-Interfaced Renewable Energy Sources. Effects on Distance Protection}},
+  year      = {2020},
+  pages     = {1-6},
+  doi       = {10.1109/TDLA47668.2020.9326226},
+}
+
+@Article{liang2017short,
+  author    = {Liang, Zhigang and Lin, Xinchun and Kang, Yong and Gao, Bofeng and Lei, He},
+  journal   = {IEEE Transactions on Power Electronics},
+  title     = {{Short Circuit Current Characteristics Analysis and Improved Current Limiting Strategy for Three-Phase Three-Leg Inverter under Asymmetric Short Circuit Fault}},
+  year      = {2017},
+  number    = {8},
+  pages     = {7214--7228},
+  volume    = {33},
+  publisher = {IEEE},
+}
+
+@InProceedings{6878629,
+  author    = {Margossian, Harag and Sachau, Juergen and Deconinck, Geert},
+  booktitle = {2014 IEEE 5th International Symposium on Power Electronics for Distributed Generation Systems (PEDG)},
+  title     = {{Short Circuit Calculation in Networks with a High Share of Inverter Based Distributed Generation}},
+  year      = {2014},
+  pages     = {1-5},
+  doi       = {10.1109/PEDG.2014.6878629},
+}
+
+@Article{KIM2021106839,
+  author   = {Insu Kim},
+  journal  = {Electric Power Systems Research},
+  title    = {{A calculation method for the short-circuit current contribution of current-control inverter-based distributed generation sources at balanced conditions}},
+  year     = {2021},
+  issn     = {0378-7796},
+  pages    = {106839},
+  volume   = {190},
+  abstract = {When a grid-connected inverter-based distributed generation (IBDG) source behaves as a current source that can limit its magnitude in current loop control, the contribution from the inverter to the short-circuit current (SCC) is not as significant as those from conventional synchronous generators. However, the increased IBDG sources can change the magnitude and phase angle of the SCC, so they should not be ignored in SCC calculation. The objective of this study is to present a method for calculating the SCC of an IBDG source of acting as an internally either limited or unlimited current source at balanced conditions. For this purpose, negative- and zero-sequence networks are transferred to a positive-sequence network with balanced IBDG sources. Subsequently, SCCs and zero-, negative-, and positive-sequence induced voltage are determined by using zero- and negative-sequence current injection matrices. Then, new SCC calculation equations for a single line-to ground, line-to-line ground, line-to-line, or three-phase fault are also derived. As a result, the proposed method improves the conventional method in terms of taking the contribution from a balanced IBDG source to SCC into account.},
+  doi      = {https://doi.org/10.1016/j.epsr.2020.106839},
+  keywords = {Bus-impedance matrices, Current-injection matrices, Balanced inverter-based distributed generation, Short-circuit current, Short-circuit voltage},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0378779620306386},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
